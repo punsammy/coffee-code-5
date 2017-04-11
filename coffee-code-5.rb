@@ -1,19 +1,10 @@
 #Displaying Phone Numbers
-# create_phone_number([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
 
-def create_phone_number(phoneNumber)
-  phoneNumber = []
-
+def create_phone_number(a)
+  puts "(#{a[0]}#{a[1]}#{a[2]})-#{a[3]}#{a[4]}#{a[5]}-#{a[6]}#{a[7]}#{a[8]}#{a[9]}"
 end
-amanda = [1,2,3,4,5,6,7,8,9,0]
-create_phone_number("amanda")
-puts "(#{amanda[0]}#{amanda[1]}#{amanda[2]})-#{amanda[3]}#{amanda[4]}#{amanda[5]}-#{amanda[6]}#{amanda[7]}#{amanda[8]}#{amanda[9]}"
 
-
-
-
-# puts "(#{create_phone_number[0,1,2]})-#{create_phone_number[3,4,5]}-#{create_phone_number[6,7,8,9]}"
-
+create_phone_number([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])
 
 #Valid Phone Numbers
 def validPhoneNumber(phoneNumber)
@@ -32,3 +23,12 @@ puts validPhoneNumber("(098) 123 4567")
 
 
 #Luck Check
+#Given a Number
+#1. Figure out the length of the Number
+  # Figure out how many digits there are
+#2. Divide the number of digits by 2, and set it to a variable
+#3. Split the string into two parts, each with length half of the original
+#4. Turn those string into arrays
+#5. Iterate over each array
+#6. Sum the digits
+#7. Compare the left side sum to the right side sum
